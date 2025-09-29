@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title + ' - Business Website'
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      nav.navbar
+        .nav-container
+          .nav-brand
+            a(href='/') Business Website
+          ul.nav-menu
+            li.nav-item
+              a.nav-link(href='/', class=(currentPage === 'home' ? 'active' : '')) Home
+            li.nav-item
+              a.nav-link(href='/services', class=(currentPage === 'services' ? 'active' : '')) Our Services
+            li.nav-item
+              a.nav-link(href='/contact', class=(currentPage === 'contact' ? 'active' : '')) Contact Us
+
+    main.main-content
+      block content
+
+    footer
+      .footer-content
+        p &copy; 2024 Business Website. All rights reserved.
+        p Available Monday to Friday, 9:00 AM - 5:00 PM

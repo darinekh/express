@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title= title + ' - Business Website'
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .outside-hours-container
+      .outside-hours-content
+        .icon-container
+          span.clock-icon 🕒
+        
+        h1.outside-hours-title We're Currently Closed
+        
+        .current-time
+          p Current time: #{currentTime}
+        
+        .working-hours-info
+          h2 Our Business Hours
+          p.hours #{workingHours}
+          
+          .hours-details
+            p We are available to serve you during our regular business hours:
+            ul
+              li Monday: 9:00 AM - 5:00 PM
+              li Tuesday: 9:00 AM - 5:00 PM
+              li Wednesday: 9:00 AM - 5:00 PM
+              li Thursday: 9:00 AM - 5:00 PM
+              li Friday: 9:00 AM - 5:00 PM
+              li Saturday: Closed
+              li Sunday: Closed
+        
+        .message-section
+          h2 Thank You for Visiting!
+          p We appreciate your interest in our services. Please visit us again during our business hours to explore our website and learn more about what we can offer you.
+          
+          .contact-info
+            h3 Need Immediate Assistance?
+            p For urgent matters, you can reach us at:
+            p 📧 Email: emergency@businesswebsite.com
+            p 📞 Emergency Line: +1 (555) 999-0000
+            p.note Please note that emergency support may have additional charges and is available for existing clients only.
+        
+        .return-info
+          h2 Come Back Soon!
+          p Our website will be fully accessible during business hours. We look forward to serving you then.
+          
+          .refresh-section
+            p You can refresh this page during business hours to access our full website.
+            button.btn.btn-primary(onclick='location.reload()') Refresh Page
+    
+    footer.outside-hours-footer
+      p &copy; 2024 Business Website. All rights reserved.
